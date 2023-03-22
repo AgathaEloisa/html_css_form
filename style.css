@@ -1,0 +1,37 @@
+#container {
+    font-family: Arial, Helvetica, sans-serif;
+    background-color:rgb(247, 213, 247);
+    border: .1em solid purple;
+    padding: 0% 20%;
+}
+
+label {
+    font-weight: bold;
+}
+
+span {
+
+}
+
+.the_form {
+    background-color: lightseagreen;
+    height: 50%;
+    width: 60%;
+}
+
+/* botones */
+
+button {
+    border-radius: 0.4em;
+    border: .2em dotted purple;
+    background-color: lemonchiffon;
+    cursor: pointer;
+}
+
+button:hover {
+    background-color: lightskyblue;
+}
+
+button:active {
+    color: red;
+}

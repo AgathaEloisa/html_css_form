@@ -1,12 +1,86 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Document</title>
+    <link rel="stylesheet" href="style.css" media="screen">
+    <title>Agatha's form</title>
 </head>
+
 <body>
-    
+    <div id="container">
+        <h1>Agatha's form</h1>
+        <form action="" class="the_form" id="theForm">
+            <div class="user" id="user">
+                <h3>Ingreso de usuario</h3>
+                <!-- Usuario -> tipo input text -->
+                <span>*</span>
+                <label for="name">Ingresa tu nombre:</label><br>
+                <input type="text" name="user_name">
+                <br>
+                <!-- Contraseña -> tipo input password -->
+                <span>*</span>
+                <label for="password">Ingresa tu contraseña:</label><br>
+                <input type="password" name="password">
+                <br>
+                <!-- Repetir Contraseña -> tipo input text -->
+                <span>*</span>
+                <label for="password_repeated">Repetir contraseña:</label><br>
+                <input type="password" name="password_repeated">
+                <br>
+                <span>*</span>
+                <!-- Correo -> tipo input text -->
+                <label for="mail">Ingresa tu correo:</label><br>
+                <input type="email" name="mail">
+            </div>
+
+            <!-- Tipo de cuenta (Básico, Premium, Oro) -> tipo input Radio -->
+            <div class="kind_account" id="kindAccount">
+                <h3>Tipo de cuenta</h3>
+                <input type="radio" id="Basic" name="type_account" value="Básico">
+                <label for="Basic">Básico</label><br>
+                <input type="radio" id="Premium" name="type_account" value="Premium">
+                <label for="Premium">Premium</label><br>
+                <input type="radio" id="Oro" name="type_account" value="Oro">
+                <label for="Oro">Oro</label>
+            </div>
+
+
+            <!-- Hobbies (al menos 4) -> tipo input checkbox -->
+            <div class="hobbies" id="hobbies_section">
+                <h3>Hobbie(s) del usuario</h3>
+                <input type="checkbox" id="hobbie_1" name="hobbie_1" value="videojuegos">
+                <label for="hobbie_1"> Jugar videojuegos</label><br>
+                <input type="checkbox" id="hobbie_2" name="hobbie_2" value="leer">
+                <label for="hobbie_2"> Leer un libro</label><br>
+                <input type="checkbox" id="hobbie_3" name="hobbie_3" value="Programar">
+                <label for="hobbie_3"> Programar</label><br>
+                <input type="checkbox" id="hobbie_4" name="hobbie_4" value="Escribir">
+                <label for="hobbie_4"> Escribir</label>
+            </div>
+
+            <!-- País (al menos 3 países a seleccionar) -> tipo select -->
+            <div class="country" id="country_section">
+                <h3>País</h3>
+                <label for="pais">Selecciona un país:</label><br>
+                <select name="country" id="country">
+                    <option value="">--Selecciona una opción--</option>
+                    <option value="Chile">Chile</option>
+                    <option value="Irlanda">Irlanda</option>
+                    <option value="Canadá">Canadá</option>
+                </select>
+            </div>
+
+            <div class="btns" id="btns">
+                <!-- Botón limpiar -> tipo button -->
+                <button type="button">Limpiar todo</button>
+                <!-- Botón enviar -> tipo submit -->
+                <button type="submit">Enviar</button>
+            </div>
+        </form>
+    </div>
 </body>
+
 </html>
